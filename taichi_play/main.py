@@ -52,8 +52,7 @@ def list():
         ("julia", "Animated Julia Set fractal visualization"),
         ("cloth", "Cloth and ball physics simulation"),
         ("widgets", "Interactive GUI widgets demo"),
-        ("triangle", "Simple colored triangle using GGUI (OpenGL-style)"),
-        ("qt-triangle", "PyQt6 window with colored triangle (manual rasterization)"),
+        ("triangle", "Simple colored triangle"),
     ]
 
     click.echo("\nAvailable Examples:")
