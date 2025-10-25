@@ -35,12 +35,20 @@ def widgets():
 
 
 @cli.command()
+def qt_triangle():
+    """Display a PyQt6 window with a colored triangle."""
+    from taichi_play.examples.qt_triangle import run
+    run()
+
+
+@cli.command()
 def list():
     """List all available examples."""
     examples = [
         ("julia", "Animated Julia Set fractal visualization"),
         ("cloth", "Cloth and ball physics simulation"),
         ("widgets", "Interactive GUI widgets demo"),
+        ("qt-triangle", "PyQt6 window with colored triangle"),
     ]
 
     click.echo("\nAvailable Examples:")
