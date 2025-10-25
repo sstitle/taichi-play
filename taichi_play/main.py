@@ -17,6 +17,7 @@ def cli():
 def julia():
     """Display an animated Julia Set fractal visualization."""
     from taichi_play.examples.julia_set import run
+
     run()
 
 
@@ -24,6 +25,7 @@ def julia():
 def cloth():
     """Run a cloth and ball physics simulation."""
     from taichi_play.examples.cloth_simulation import run
+
     run()
 
 
@@ -31,13 +33,15 @@ def cloth():
 def widgets():
     """Display interactive GUI widgets demo."""
     from taichi_play.examples.gui_widgets import run
+
     run()
 
 
 @cli.command()
-def qt_triangle():
-    """Display a PyQt6 window with a colored triangle."""
-    from taichi_play.examples.qt_triangle import run
+def triangle():
+    """Display a simple colored triangle using GGUI (OpenGL-style)."""
+    from taichi_play.examples.triangle import run
+
     run()
 
 
@@ -48,7 +52,8 @@ def list():
         ("julia", "Animated Julia Set fractal visualization"),
         ("cloth", "Cloth and ball physics simulation"),
         ("widgets", "Interactive GUI widgets demo"),
-        ("qt-triangle", "PyQt6 window with colored triangle"),
+        ("triangle", "Simple colored triangle using GGUI (OpenGL-style)"),
+        ("qt-triangle", "PyQt6 window with colored triangle (manual rasterization)"),
     ]
 
     click.echo("\nAvailable Examples:")
