@@ -6,4 +6,11 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "taichi>=1.7.4",
+    "click>=8.1.0",
 ]
+
+[project.scripts]
+taichi-play = "taichi_play.main:cli"
+
+[tool.uv]
+package = true
